@@ -7,7 +7,7 @@ const CACHE_NAME = 'chicken-master-v1';
 
 // Files to cache for offline use
 const ASSETS_TO_CACHE = [
-  './chicken-master.html',
+  './index.html',
   './manifest.json',
   './icon-192.png',
   './icon-512.png',
@@ -59,7 +59,7 @@ self.addEventListener('fetch', event => {
       }).catch(() => {
         // Offline fallback for navigation requests
         if (event.request.mode === 'navigate') {
-          return caches.match('./chicken-master.html');
+          return caches.match('./index.html');
         }
         return new Response('', { status: 503, statusText: 'Offline' });
       });
