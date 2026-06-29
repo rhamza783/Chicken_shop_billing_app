@@ -2,7 +2,7 @@
   "name": "چکن ماسٹر پرو",
   "short_name": "چکن ماسٹر",
   "description": "Chicken Shop Point of Sale App",
-  "start_url": "./chicken-master.html",
+  "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
